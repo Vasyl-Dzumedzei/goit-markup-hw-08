@@ -1,0 +1,14 @@
+.footer-container-welcome {
+  margin-right: 94px;
+}
+
+.footer-container-welcome__text,
+.footer-container-subscribe__text {
+  color: var(--white-color);
+  font-weight: 700;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: inline-block;
+}
