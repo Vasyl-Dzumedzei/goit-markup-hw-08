@@ -78,20 +78,21 @@
     <main> -->
 
     <!-- Герой -->
-    <!-- <section class="hero-section section">
-        <div class="container hero-container">
-          <h1 class="hero-container__title">
-            Эффективные решения для вашего бизнеса
-          </h1>
-          <button
-            data-modal-open
-            type="button"
-            class="hero-container__order-button"
-          >
-            Заказать услугу
-          </button>
-        </div>
-      </section> -->
+    <section class="hero-section section">
+      <div class="container hero-container">
+        <h1 class="hero-container__title">
+          Эффективные решения<br />
+          для вашего бизнеса
+        </h1>
+        <button
+          data-modal-open
+          type="button"
+          class="hero-container__order-button"
+        >
+          Заказать услугу
+        </button>
+      </div>
+    </section>
 
     <!-- Наши преимущества -->
     <section class="benefits-section section">
@@ -167,288 +168,401 @@
     </section>
 
     <!-- Чем мы занимаемся -->
-    <!-- <section class="offers-section section">
-        <div class="container offers-container">
-          <h2 class="container__title">Чем мы занимаемся</h2>
-          <ul class="offers-container-list list">
-            <li class="offers-container__item">
-              <div class="offers-container-thumb">
-                <img
-                  src="./images/image1.jpg"
-                  alt="Десктопные приложения"
-                  width="370"
-                />
-                <h3 class="offers-container__label">Десктопные приложения</h3>
-              </div>
-            </li>
-            <li class="offers-container__item">
-              <div class="offers-container-thumb">
-                <img
-                  src="./images/image2.jpg"
-                  alt="Мобильные приложения"
-                  width="370"
-                />
-                <h3 class="offers-container__label">Мобильные приложения</h3>
-              </div>
-            </li>
-            <li class="offers-container__item">
-              <div class="offers-container-thumb">
-                <img
-                  src="./images/image3.jpg"
-                  alt="Дизайнерские решения"
-                  width="370"
-                />
-                <h3 class="offers-container__label">Дизайнерские решения</h3>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section> -->
+    <section class="offers-section section">
+      <div class="container offers-container">
+        <h2 class="container__title">Чем мы занимаемся</h2>
+        <ul class="offers-container-list list">
+          <li class="offers-container__item">
+            <div class="offers-container-thumb">
+              <img
+                srcset="
+                  ./images/desktop/offer1-desk-1x-min.jpg 1x,
+                  ./images/desktop/offer1-desk-2x-min.jpg 2x
+                "
+                src="./images/desktop/offer1-desk-2x-min.jpg"
+                alt="Десктопные приложения"
+                width="370"
+              />
+              <h3 class="offers-container__label">Десктопные приложения</h3>
+            </div>
+          </li>
+          <li class="offers-container__item">
+            <div class="offers-container-thumb">
+              <img
+                srcset="
+                  ./images/desktop/offer2-desk-1x-min.jpg 1x,
+                  ./images/desktop/offer2-desk-2x-min.jpg 2x
+                "
+                src="./images/desktop/offer2-desk-2x-min.jpg"
+                alt="Мобильные приложения"
+                width="370"
+              />
+              <h3 class="offers-container__label">Мобильные приложения</h3>
+            </div>
+          </li>
+          <li class="offers-container__item">
+            <div class="offers-container-thumb">
+              <img
+                srcset="
+                  ./images/desktop/offer3-desk-1x-min.jpg 1x,
+                  ./images/desktop/offer3-desk-2x-min.jpg 2x
+                "
+                src="./images/desktop/offer3-desk-2x-min.jpg"
+                alt="Дизайнерские решения"
+                width="370"
+              />
+              <h3 class="offers-container__label">Дизайнерские решения</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!-- Наша команда -->
-    <!-- <section class="employee-section section">
-        <div class="container employee-container">
-          <h2 class="container__title">Наша команда</h2>
-          <ul class="employee-container-list list">
-            <li class="employee-container-list__item">
+    <section class="employee-section section">
+      <div class="container employee-container">
+        <h2 class="container__title">Наша команда</h2>
+        <ul class="employee-container-list list">
+          <li class="employee-container-list__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop/team-member1-desk-1x-min.jpg 1x,
+                  ./images/desktop/team-member1-desk-2x-min.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/team-member1-tabl-1x-min.jpg 1x,
+                  ./images/tablet/team-member1-tabl-2x-min.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile/team-member1-mob-1x-min.jpg 1x,
+                  ./images/mobile/team-member1-mob-2x-min.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 480px)"
+              />
               <img
-                src="./images/demyanenko.jpg"
+                src="./images/mobile/team-member1-mob-1x-min.jpg"
                 alt="Игорь Демьяненко"
-                width="270"
                 class="employee-container-list__image"
               />
-              <div class="employee-container-list__wrapper">
-                <h3 class="employee-container-list__name">Игорь Демьяненко</h3>
-                <p class="employee-container-list__position">
-                  Product Designer
-                </p>
-                <ul class="social-icons-list">
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-instagram"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-twitter"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-facebook"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-linkedin"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="employee-container-list__item">
+            </picture>
+
+            <div class="employee-container-list__wrapper">
+              <h3 class="employee-container-list__name">Игорь Демьяненко</h3>
+              <p class="employee-container-list__position">Product Designer</p>
+              <ul class="social-icons-list">
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-linkedin"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="employee-container-list__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop/team-member2-desk-1x-min.jpg 1x,
+                  ./images/desktop/team-member2-desk-2x-min.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/team-member2-tabl-1x-min.jpg 1x,
+                  ./images/tablet/team-member2-tabl-2x-min.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile/team-member2-mob-1x-min.jpg 1x,
+                  ./images/mobile/team-member2-mob-2x-min.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 480px)"
+              />
               <img
-                src="./images/repina.jpg"
+                src="./images/mobile/team-member2-mob-1x-min.jpg"
                 alt="Ольга Репина"
-                width="270"
                 class="employee-container-list__image"
               />
-              <div class="employee-container-list__wrapper">
-                <h3 class="employee-container-list__name">Ольга Репина</h3>
-                <p class="employee-container-list__position">
-                  Frontend Developer
-                </p>
-                <ul class="social-icons-list">
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-instagram"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-twitter"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-facebook"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-linkedin"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="employee-container-list__item">
+            </picture>
+
+            <div class="employee-container-list__wrapper">
+              <h3 class="employee-container-list__name">Ольга Репина</h3>
+              <p class="employee-container-list__position">
+                Frontend Developer
+              </p>
+              <ul class="social-icons-list">
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-linkedin"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="employee-container-list__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop/team-member3-desk-1x-min.jpg 1x,
+                  ./images/desktop/team-member3-desk-2x-min.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/team-member3-tabl-1x-min.jpg 1x,
+                  ./images/tablet/team-member3-tabl-2x-min.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile/team-member3-mob-1x-min.jpg 1x,
+                  ./images/mobile/team-member3-mob-2x-min.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 480px)"
+              />
               <img
-                src="./images/tarasov.jpg"
+                src="./images/mobile/team-member3-mob-1x-min.jpg"
                 alt="Николай Тарасов"
-                width="270"
                 class="employee-container-list__image"
               />
-              <div class="employee-container-list__wrapper">
-                <h3 class="employee-container-list__name">Николай Тарасов</h3>
-                <p class="employee-container-list__position">Marketing</p>
-                <ul class="social-icons-list">
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-instagram"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-twitter"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-facebook"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-linkedin"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="employee-container-list__item">
+            </picture>
+            <div class="employee-container-list__wrapper">
+              <h3 class="employee-container-list__name">Николай Тарасов</h3>
+              <p class="employee-container-list__position">Marketing</p>
+              <ul class="social-icons-list">
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-linkedin"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="employee-container-list__item">
+            <picture>
+              <source
+                srcset="
+                  ./images/desktop/team-member4-desk-1x-min.jpg 1x,
+                  ./images/desktop/team-member4-desk-2x-min.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet/team-member4-tabl-1x-min.jpg 1x,
+                  ./images/tablet/team-member4-tabl-2x-min.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./images/mobile/team-member4-mob-1x-min.jpg 1x,
+                  ./images/mobile/team-member4-mob-2x-min.jpg 2x
+                "
+                type="image/jpeg"
+                media="(min-width: 480px)"
+              />
               <img
-                src="./images/ermakov.jpg"
+                src="./images/mobile/team-member4-mob-1x-min.jpg"
                 alt="Михаил Ермаков"
-                width="270"
                 class="employee-container-list__image"
               />
-              <div class="employee-container-list__wrapper">
-                <h3 class="employee-container-list__name">Михаил Ермаков</h3>
-                <p class="employee-container-list__position">UI Designer</p>
-                <ul class="social-icons-list">
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-instagram"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-twitter"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-facebook"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-icons-list__item">
-                    <a href="#" class="social-icons-list__link">
-                      <svg class="social-icons-list__icon">
-                        <use
-                          href="./images/icons.svg#icon-linkedin"
-                          width="20"
-                          height="20"
-                        ></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section> -->
+            </picture>
+
+            <div class="employee-container-list__wrapper">
+              <h3 class="employee-container-list__name">Михаил Ермаков</h3>
+              <p class="employee-container-list__position">UI Designer</p>
+              <ul class="social-icons-list">
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-instagram"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-twitter"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-facebook"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-icons-list__item">
+                  <a href="#" class="social-icons-list__link">
+                    <svg class="social-icons-list__icon">
+                      <use
+                        href="./images/icons.svg#icon-linkedin"
+                        width="20"
+                        height="20"
+                      ></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!-- Постоянные клиенты -->
     <!-- <section class="customers-section section">

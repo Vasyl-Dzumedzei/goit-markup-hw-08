@@ -6,31 +6,99 @@
       var(--hero-gradient-color),
       var(--hero-gradient-color)
     ),
-    url(../images/hero-bgc-image.jpg);
+    url(../images/mobile/hero-bgc-image-mob-img-1x-min.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   max-width: 1600px;
   margin: 0 auto;
-}
 
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 
-.hero-container__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--white-color);
-  width: 696px;
-  margin-top: 0px;
-  margin-bottom: 30px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        var(--hero-gradient-color),
+        var(--hero-gradient-color)
+      ),
+      url(../images/mobile/hero-bgc-image-mob-img-2x-min.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        to right,
+        var(--hero-gradient-color),
+        var(--hero-gradient-color)
+      ),
+      url(../images/tablet/hero-bgc-image-tabl-img-1x-min.jpg);
+  }
+
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        var(--hero-gradient-color),
+        var(--hero-gradient-color)
+      ),
+      url(../images/tablet/hero-bgc-image-tabl-img-2x-min.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        var(--hero-gradient-color),
+        var(--hero-gradient-color)
+      ),
+      url(../images/desktop/hero-bgc-image-desk-img-1x-min.jpg);
+  }
+
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        var(--hero-gradient-color),
+        var(--hero-gradient-color)
+      ),
+      url(../images/desktop/hero-bgc-image-desk-img-2x-min.jpg);
+  }
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-container__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    // width: 290px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    // @media screen and (min-width: 480px) {
+    //   font-size: 26px;
+    //   width: 360px;
+    // }
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.364;
+      // width: 696px;
+    }
+  }
 }
