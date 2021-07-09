@@ -1,0 +1,30 @@
+.social-list {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    bottom: 48px;
+    left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+}
+
+.social-list__item {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.223;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+
+  &:not(:first-child) {
+    padding-left: 10px;
+  }
+  &:not(:last-child) {
+    padding-right: 10px;
+  }
+  &:not(:last-child) {
+    border-right: 1px solid var(--form-input-border-color);
+  }
+}

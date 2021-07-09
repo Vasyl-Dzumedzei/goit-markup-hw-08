@@ -21,53 +21,90 @@
           <span class="logo--accent-color">Web</span>Studio
         </a>
         <!-- Меню -->
-        <nav>
-          <ul class="nav-list list">
-            <li class="nav-list__item">
-              <a href="./index.html" class="nav-list__link link">Студия</a>
-            </li>
-            <li class="nav-list__item">
-              <a
-                href="./portfolio.html"
-                class="nav-list__link link nav-list__link--current"
-                >Портфолио</a
-              >
-            </li>
-            <li class="nav-list__item">
-              <a href="#" class="nav-list__link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-
-        <ul class="contacts-list list">
-          <li class="contacts-list__item">
-            <a
-              href="mailto:info@devstudio.com"
-              class="contacts-list__link link"
-            >
+        <button type="button" class="menu__button open-menu">
+          <svg class="menu__icon menu__icon--open-menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <div class="menu">
+          <div class="container">
+            <button type="button" class="menu__button close-menu">
               <svg
-                class="contacts-list__icon-envelope"
-                width="1rem"
-                height="1rem"
+                class="menu__icon menu__icon--close-menu"
+                width="40"
+                height="40"
               >
-                <use href="./images/icons.svg#icon-envelope"></use>
+                <use href="./images/icons.svg#icon-mobile-menu--close"></use>
               </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="contacts-list__item">
-            <a href="tel:+380961111111" class="contacts-list__link link"
-              ><svg
-                class="contacts-list__icon-phone"
-                width="1rem"
-                height="1rem"
-              >
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+            </button>
+
+            <!-- Навигация -->
+            <nav>
+              <ul class="nav-list list">
+                <li class="nav-list__item">
+                  <a href="./index.html" class="nav-list__link link">Студия</a>
+                </li>
+                <li class="nav-list__item">
+                  <a
+                    href="./portfolio.html"
+                    class="nav-list__link link nav-list__link--current"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="nav-list__item">
+                  <a href="#" class="nav-list__link link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Контакты -->
+            <ul class="contacts-list list">
+              <li class="contacts-list__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-list__link link"
+                >
+                  <svg
+                    class="contacts-list__icon-envelope"
+                    width="1rem"
+                    height="1rem"
+                  >
+                    <use href="./images/icons.svg#icon-envelope"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts-list__item">
+                <a href="tel:+380961111111" class="contacts-list__link link"
+                  ><svg
+                    class="contacts-list__icon-phone"
+                    width="1rem"
+                    height="1rem"
+                  >
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+
+            <!-- Соц.сети мобильного меню -->
+            <ul class="social-list list">
+              <li class="social-list__item">
+                <a href="#" class="social-list__link link">Instagram</a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link link">Twitter</a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link link">Facebook</a>
+              </li>
+              <li class="social-list__item">
+                <a href="#" class="social-list__link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -113,33 +150,84 @@
             <li class="example-list__item example-card">
               <a href="#" class="example-card__link">
                 <div class="example-card__thumb">
-                  <img
-                    src="./images/portfolio-photo1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                    class="example-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/example1-desk-1x-min.jpg 1x,
+                        ./images/desktop/example1-desk-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/example1-tabl-1x-min.jpg 1x,
+                        ./images/tablet/example1-tabl-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/example1-mob-1x-min.jpg 1x,
+                        ./images/mobile/example1-mob-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/example1-mob-1x-min.jpg"
+                      alt="Технокряк"
+                      class="example-card__image"
+                    />
+                  </picture>
                   <p class="example-card__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <div class="example-card__text">
+                <div class="example-card__text example-card__text--tablet">
                   <h3 class="example-card__title">Технокряк</h3>
                   <p class="example-card__type">Веб-сайт</p>
                 </div>
               </a>
             </li>
+
             <li class="example-list__item example-card">
               <a href="#" class="example-card__link"
                 ><div class="example-card__thumb">
-                  <img
-                    src="./images/portfolio-photo2.jpg"
-                    alt="Постер Нью Орлеан"
-                    width="370"
-                    class="example-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/example2-desk-1x-min.jpg 1x,
+                        ./images/desktop/example2-desk-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/example2-tabl-1x-min.jpg 1x,
+                        ./images/tablet/example2-tabl-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/example2-mob-1x-min.jpg 1x,
+                        ./images/mobile/example2-mob-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/example2-mob-1x-min.jpg"
+                      alt="Постер Нью Орлеан"
+                      class="example-card__image"
+                    />
+                  </picture>
                   <p class="example-card__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -154,15 +242,41 @@
                 </div></a
               >
             </li>
+
             <li class="example-list__item example-card">
               <a href="#" class="example-card__link"
                 ><div class="example-card__thumb">
-                  <img
-                    src="./images/portfolio-photo3.jpg"
-                    alt="Ресторан Сифуд "
-                    width="370"
-                    class="example-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/example3-desk-1x-min.jpg 1x,
+                        ./images/desktop/example3-desk-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/example3-tabl-1x-min.jpg 1x,
+                        ./images/tablet/example3-tabl-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/example3-mob-1x-min.jpg 1x,
+                        ./images/mobile/example3-mob-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/example3-mob-1x-min.jpg"
+                      alt="Ресторан Сифуд "
+                      class="example-card__image"
+                    />
+                  </picture>
                   <p class="example-card__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -175,15 +289,41 @@
                 </div></a
               >
             </li>
+
             <li class="example-list__item example-card">
               <a href="#" class="example-card__link"
                 ><div class="example-card__thumb">
-                  <img
-                    src="./images/portfolio-photo4.jpg"
-                    alt="Проэкт Прайм"
-                    width="370"
-                    class="example-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/example4-desk-1x-min.jpg 1x,
+                        ./images/desktop/example4-desk-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/example4-tabl-1x-min.jpg 1x,
+                        ./images/tablet/example4-tabl-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/example4-mob-1x-min.jpg 1x,
+                        ./images/mobile/example4-mob-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/example4-mob-1x-min.jpg"
+                      alt="Проэкт Прайм"
+                      class="example-card__image"
+                    />
+                  </picture>
                   <p class="example-card__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -196,15 +336,41 @@
                 </div></a
               >
             </li>
+
             <li class="example-list__item example-card">
               <a href="#" class="example-card__link"
                 ><div class="example-card__thumb">
-                  <img
-                    src="./images/portfolio-photo5.jpg"
-                    alt="Проэкт Боксес"
-                    width="370"
-                    class="example-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/example5-desk-1x-min.jpg 1x,
+                        ./images/desktop/example5-desk-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/example5-tabl-1x-min.jpg 1x,
+                        ./images/tablet/example5-tabl-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/example5-mob-1x-min.jpg 1x,
+                        ./images/mobile/example5-mob-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/example5-mob-1x-min.jpg"
+                      alt="Проэкт Боксес"
+                      class="example-card__image"
+                    />
+                  </picture>
                   <p class="example-card__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -217,15 +383,41 @@
                 </div></a
               >
             </li>
+
             <li class="example-list__item example-card">
               <a href="#" class="example-card__link"
                 ><div class="example-card__thumb">
-                  <img
-                    src="./images/portfolio-photo6.jpg"
-                    alt="Инспирейшн"
-                    width="370"
-                    class="example-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/example6-desk-1x-min.jpg 1x,
+                        ./images/desktop/example6-desk-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/example6-tabl-1x-min.jpg 1x,
+                        ./images/tablet/example6-tabl-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/example6-mob-1x-min.jpg 1x,
+                        ./images/mobile/example6-mob-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/example6-mob-1x-min.jpg"
+                      alt="Инспирейшн"
+                      class="example-card__image"
+                    />
+                  </picture>
                   <p class="example-card__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -240,15 +432,41 @@
                 </div></a
               >
             </li>
+
             <li class="example-list__item example-card">
               <a href="#" class="example-card__link"
                 ><div class="example-card__thumb">
-                  <img
-                    src="./images/portfolio-photo7.jpg"
-                    alt="Издание Лимитед"
-                    width="370"
-                    class="example-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/example7-desk-1x-min.jpg 1x,
+                        ./images/desktop/example7-desk-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/example7-tabl-1x-min.jpg 1x,
+                        ./images/tablet/example7-tabl-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/example7-mob-1x-min.jpg 1x,
+                        ./images/mobile/example7-mob-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/example7-mob-1x-min.jpg"
+                      alt="Издание Лимитед"
+                      class="example-card__image"
+                    />
+                  </picture>
                   <p class="example-card__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -261,15 +479,41 @@
                 </div></a
               >
             </li>
+
             <li class="example-list__item example-card">
               <a href="#" class="example-card__link"
                 ><div class="example-card__thumb">
-                  <img
-                    src="./images/portfolio-photo8.jpg"
-                    alt="Проэкт Лаб"
-                    width="370"
-                    class="example-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/example8-desk-1x-min.jpg 1x,
+                        ./images/desktop/example8-desk-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/example8-tabl-1x-min.jpg 1x,
+                        ./images/tablet/example8-tabl-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/example8-mob-1x-min.jpg 1x,
+                        ./images/mobile/example8-mob-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/example8-mob-1x-min.jpg"
+                      alt="Проэкт Лаб"
+                      class="example-card__image"
+                    />
+                  </picture>
                   <p class="example-card__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -282,15 +526,42 @@
                 </div></a
               >
             </li>
+
             <li class="example-list__item example-card">
               <a href="#" class="example-card__link">
                 <div class="example-card__thumb">
-                  <img
-                    src="./images/portfolio-photo9.jpg"
-                    alt="Гровинг Бизнесс "
-                    width="370"
-                    class="example-card__image"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/example9-desk-1x-min.jpg 1x,
+                        ./images/desktop/example9-desk-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/example9-tabl-1x-min.jpg 1x,
+                        ./images/tablet/example9-tabl-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/example9-mob-1x-min.jpg 1x,
+                        ./images/mobile/example9-mob-2x-min.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      src="./images/mobile/example9-mob-1x-min.jpg"
+                      alt="Гровинг Бизнесс"
+                      width="370"
+                      class="example-card__image"
+                    />
+                  </picture>
                   <p class="example-card__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -316,6 +587,7 @@
           <a href="./index.html" class="footer-container_logo logo link"
             ><span class="logo--accent-color">Web</span>Studio</a
           >
+
           <!-- Адрес -->
           <address class="footer-container-address">
             <p class="footer-container-address__post">
@@ -413,5 +685,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

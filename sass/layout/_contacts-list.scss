@@ -1,40 +1,94 @@
 .contacts-list {
-  display: flex;
-  width: 307px;
-  justify-content: space-between;
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
+  @media screen and(max-width: 767px) {
+    position: absolute;
+    bottom: 134px;
+    left: 40px;
+    font-size: 26px;
+    line-height: 1.176;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      font-size: 34px;
+    }
+  }
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    // font-display: row;
+    // width: 307px;
+    // justify-content: space-between;
+    color: var(--secondary-text-color);
+
+    font-size: 14px;
+    line-height: 1.143;
+  }
 }
 
 .contacts-list__item {
-  margin-right: 30px;
   display: flex;
-  align-items: center;
-  &:last-child {
-    margin-right: 0px;
+  flex-direction: column;
+
+  &:not(:last-child) {
+    margin-bottom: 32px;
+    @media screen and(min-width: 768px) {
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+    }
+    @media screen and(min-width: 1200px) {
+      margin-right: 30px;
+      margin-bottom: 0;
+      display: flex;
+      align-items: center;
+      &:last-child {
+        margin-right: 0px;
+      }
+
+      // margin-right: 30px;
+      // display: flex;
+      // align-items: center;
+      // &:last-child {
+      //   margin-right: 0px;
+    }
   }
-}
 
-.contacts-list__icon-envelope,
-.contacts-list__icon-phone {
-  fill: currentColor;
-  margin-right: 10px;
-  &:hover {
-    fill: currentColor;
+  .contacts-list__icon-envelope,
+  .contacts-list__icon-phone {
+    display: none;
+    @media screen and(min-width: 768px) {
+      display: flex;
+      fill: currentColor;
+      margin-right: 10px;
+      &:hover {
+        fill: currentColor;
+      }
+    }
   }
-}
 
-.contacts-list__link {
-  width: 161px;
-  display: flex;
-  align-items: center;
-  padding: 32px 0;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .contacts-list__link {
+    // width: 161px;
+    // align-items: center;
+    // padding: 32px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+    @media screen and(min-width: 768px) {
+      display: flex;
+    }
+
+    @media screen and(min-width: 1200px) {
+      // width: 161px;
+      // align-items: center;
+      padding: 32px 0;
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }

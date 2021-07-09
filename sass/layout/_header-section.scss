@@ -6,5 +6,15 @@
 .header-container {
   display: flex;
   align-items: center;
-  flex-direction: row;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    padding-left: 0;
+  }
+}
+
+.menu .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

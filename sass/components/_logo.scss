@@ -1,11 +1,24 @@
 .logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
-  margin-right: 93px;
-  padding: 24.625px 0;
+  margin-right: 0px;
+  padding: 16px 0;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 24.625px 0;
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.192;
+  }
 }
 
 .logo--accent-color {
