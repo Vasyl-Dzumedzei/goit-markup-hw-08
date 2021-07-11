@@ -33,7 +33,6 @@
 
 .address-list {
   color: var(--footer-grey-text-color);
-  //
 }
 
 .address-list__item {
@@ -42,12 +41,6 @@
     margin-bottom: 8px;
   }
 }
-
-// .address-list__item {
-//   &:not(:last-child) {
-//     margin-bottom: 9px;
-//   }
-// }
 
 .address-list__link {
   color: inherit;

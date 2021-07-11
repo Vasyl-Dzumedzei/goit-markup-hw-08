@@ -7,8 +7,12 @@
     line-height: 1.176;
     letter-spacing: 0.02em;
     font-weight: 500;
+    color: var(--secondary-text-color);
     @media screen and (min-width: 480px) and (max-width: 767px) {
       font-size: 34px;
+      & :not(:last-child) {
+        color: var(--accent-color);
+      }
     }
   }
   @media screen and(min-width: 768px) {
@@ -19,9 +23,6 @@
   @media screen and(min-width: 1200px) {
     display: flex;
     flex-direction: row;
-    // font-display: row;
-    // width: 307px;
-    // justify-content: space-between;
     color: var(--secondary-text-color);
 
     font-size: 14px;
@@ -48,12 +49,6 @@
       &:last-child {
         margin-right: 0px;
       }
-
-      // margin-right: 30px;
-      // display: flex;
-      // align-items: center;
-      // &:last-child {
-      //   margin-right: 0px;
     }
   }
 
@@ -71,9 +66,6 @@
   }
 
   .contacts-list__link {
-    // width: 161px;
-    // align-items: center;
-    // padding: 32px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and(min-width: 768px) {
@@ -81,8 +73,6 @@
     }
 
     @media screen and(min-width: 1200px) {
-      // width: 161px;
-      // align-items: center;
       padding: 32px 0;
     }
 
